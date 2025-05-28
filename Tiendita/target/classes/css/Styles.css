@@ -1,0 +1,61 @@
+/* --- Menú Principal --- */
+.root {
+    -fx-background-color: #f4f7f6; /* Color azul */
+}
+
+.menu-bar {
+    -fx-background-color: #5dade2; /* Azul pastel */
+    -fx-font-family: "Poppins", "Open Sans", sans-serif;
+    -fx-font-size: 16px;
+    -fx-text-fill: white;
+    -fx-padding: 5px;
+}
+.menu-bar {
+    -fx-padding: 0 20px 0 0; /* Margen derecho de 20px */
+}
+
+
+
+/* --- Menús y submenús --- */
+.menu {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 8px 15px;
+}
+
+/* Efecto hover en menús */
+.menu:hover {
+    -fx-background-color: #3498db; /* Azul más fuerte */
+}
+
+/* --- Submenús --- */
+.menu-item {
+    -fx-background-color: #f8f9fa; /* Fondo claro */
+    -fx-text-fill: #333333;
+    -fx-font-size: 14px;
+    -fx-padding: 5px 10px;
+}
+
+/* Efecto hover en submenús */
+.menu-item:hover {
+    -fx-background-color: #f4d03f; /* Amarillo pastel */
+    -fx-text-fill: #333333;
+}
+
+/* --- Separador en el menú --- */
+.separator {
+    -fx-border-color: #76d7c4; /* Verde menta */
+    -fx-border-width: 1px;
+}
+
+/* --- Bordes redondeados para una apariencia suave --- */
+.menu-bar, .menu, .menu-item {
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+}
+
+/* --- Sombra ligera para resaltar el menú --- */
+.menu-bar {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.15), 5, 0, 2, 2);
+}

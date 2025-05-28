@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="900.0" prefWidth="838.0" styleClass="parent" stylesheets="@../css/Products.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.controllers.AddProductFormController">
+   <children>
+      <Label alignment="CENTER" prefHeight="61.0" prefWidth="810.0" text="Agregar Productos" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="28.208179473876953" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </Label>
+      <Line endX="836.608154296875" endY="-0.9142299890518188" startX="30.915287017822266" startY="-0.9142266511917114" />
+      <VBox layoutX="-1.0" layoutY="64.0" prefHeight="764.0" prefWidth="838.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <TitledPane prefWidth="839.0" styleClass="tiled-pane" text="INFORMACIÓN DEL PRODUCTO">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="837.0" styleClass="parent">
+                     <children>
+                        <VBox prefHeight="115.0" prefWidth="807.0">
+                           <children>
+                              <HBox prefHeight="28.0" prefWidth="600.0">
+                                 <children>
+                                    <Label text="Codigo de Barras:">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="35.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField fx:id="codBar" prefHeight="26.0" prefWidth="365.0">
+                                       <HBox.margin>
+                                          <Insets left="7.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                    <CheckBox fx:id="activBox" mnemonicParsing="false" text="Producto Activo">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="53.0" />
+                                       </HBox.margin>
+                                    </CheckBox>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="36.0" prefWidth="600.0">
+                                 <children>
+                                    <Label text="Nombre:">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="35.0" top="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField fx:id="nomLbl" prefHeight="26.0" prefWidth="304.0">
+                                       <HBox.margin>
+                                          <Insets left="7.0" top="7.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                    <Label text="Marca:">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="70.0" top="7.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField fx:id="marLbl" prefHeight="26.0" prefWidth="172.0">
+                                       <HBox.margin>
+                                          <Insets left="7.0" top="7.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="39.0" prefWidth="807.0">
+                                 <children>
+                                    <Label text="Descripción:">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="35.0" top="7.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField fx:id="descLbl" prefHeight="26.0" prefWidth="581.0">
+                                       <HBox.margin>
+                                          <Insets left="7.0" top="7.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets top="20.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+              </content>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </TitledPane>
+            <TitledPane animated="false" expanded="false" styleClass="tiled-pane" text="CARACTERISTICAS">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="837.0" styleClass="parent">
+                     <children>
+                        <VBox prefHeight="181.0" prefWidth="839.0">
+                           <children>
+                              <HBox prefHeight="30.0" prefWidth="565.0">
+                                 <children>
+                                    <Label text="Tipo:">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="100.0" top="7.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ComboBox fx:id="tipoBox" prefHeight="30.0" prefWidth="137.0">
+                                       <HBox.margin>
+                                          <Insets left="14.0" top="7.0" />
+                                       </HBox.margin>
+                                    </ComboBox>
+                                    <Label text="Presentación:">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="51.0" top="7.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ComboBox fx:id="presenBox" prefWidth="150.0">
+                                       <HBox.margin>
+                                          <Insets left="7.0" top="7.0" />
+                                       </HBox.margin>
+                                    </ComboBox>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </HBox>
+                              <HBox prefHeight="31.0" prefWidth="600.0">
+                                 <children>
+                                    <Label text="Contenido por Unidad:">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="35.0" top="7.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField fx:id="contLbl">
+                                       <HBox.margin>
+                                          <Insets left="7.0" top="7.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                    <Label text="Unidad de Medida:">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="35.0" top="7.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField fx:id="unMedLbl">
+                                       <HBox.margin>
+                                          <Insets left="7.0" top="7.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="37.0" prefWidth="600.0">
+                                 <children>
+                                    <Label text="Ruta Imagen:">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="35.0" top="7.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField prefHeight="30.0" prefWidth="571.0">
+                                       <HBox.margin>
+                                          <Insets left="7.0" top="7.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets top="20.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+              </content>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </TitledPane>
+            <TitledPane expanded="false" styleClass="tiled-pane" text="INVENTARIO">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="230.0" prefWidth="837.0" styleClass="parent">
+                     <children>
+                        <VBox prefHeight="193.0" prefWidth="838.0">
+                           <children>
+                              <HBox prefHeight="46.0" prefWidth="806.0">
+                                 <children>
+                                    <Label text="Stock Actual:">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="100.0" top="7.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField fx:id="stockField" />
+                                    <Label text="Fecha de Alta:">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="35.0" top="7.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <DatePicker fx:id="altaDate">
+                                       <HBox.margin>
+                                          <Insets left="7.0" top="7.0" />
+                                       </HBox.margin>
+                                    </DatePicker>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="47.0" prefWidth="806.0">
+                                 <children>
+                                    <Label text="Stock Minimo:">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="35.0" top="7.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField fx:id="minField" />
+                                    <Label text="Stock Maximo:">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="35.0" top="7.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField fx:id="maxField" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="83.0" prefWidth="838.0">
+                                 <children>
+                                    <Label prefHeight="27.0" prefWidth="57.0" text="Precio">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField fx:id="priceField">
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                 </children>
+                                 <padding>
+                                    <Insets left="35.0" />
+                                 </padding>
+                              </HBox>
+                              <CheckBox fx:id="perecederoCheck" mnemonicParsing="false" prefHeight="27.0" prefWidth="152.0" text="Perecedero">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="50.0" />
+                                 </VBox.margin>
+                              </CheckBox>
+                           </children>
+                           <padding>
+                              <Insets top="20.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+              </content>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </TitledPane>
+            <TitledPane expanded="false" text="UBICACIÓN">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="200.0" styleClass="parent">
+                     <children>
+                        <VBox prefHeight="126.0" prefWidth="806.0">
+                           <children>
+                              <HBox prefHeight="48.0" prefWidth="806.0">
+                                 <children>
+                                    <Label text="Pasillo:">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="35.0" top="7.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ChoiceBox fx:id="pasilloBox" prefWidth="150.0">
+                                       <HBox.margin>
+                                          <Insets left="7.0" top="7.0" />
+                                       </HBox.margin>
+                                    </ChoiceBox>
+                                    <Label text="Numero de estante:">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="50.0" top="7.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets top="20.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+              </content>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </TitledPane>
+         </children>
+      </VBox>
+      <Button fx:id="guardarBtn" layoutX="331.0" layoutY="734.0" mnemonicParsing="false" onAction="#guardarAction" prefHeight="45.0" prefWidth="149.0" text="Guardar" AnchorPane.bottomAnchor="21.0" AnchorPane.leftAnchor="331.0" AnchorPane.rightAnchor="358.20817947387695">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.controllers.SearchProductController">
+   <children>
+      <Label layoutX="73.0" layoutY="57.0" prefHeight="48.0" prefWidth="130.0" text="Codigo de barras">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="codBarSearch" layoutX="203.0" layoutY="69.0" prefHeight="25.0" prefWidth="298.0" />
+      <TableView fx:id="productTable" layoutX="73.0" layoutY="230.0" prefHeight="288.0" prefWidth="657.0">
+        <columns>
+          <TableColumn fx:id="codBarCol" prefWidth="128.0" text="Codigo de baras" />
+          <TableColumn fx:id="nomCol" prefWidth="129.0" text="Nombre" />
+            <TableColumn fx:id="ubiCol" minWidth="7.0" prefWidth="104.0" text="Localizacion" />
+            <TableColumn fx:id="existCol" minWidth="5.0" prefWidth="76.0" text="Existencias" />
+            <TableColumn fx:id="priceCol" minWidth="8.0" prefWidth="97.0" text="Precio" />
+        </columns>
+      </TableView>
+      <Button fx:id="aceeptBtn" layoutX="682.0" layoutY="537.0" mnemonicParsing="false" onAction="#acceptAction" prefHeight="32.0" prefWidth="88.0" text="ACEPTAR" />
+   </children>
+</AnchorPane>

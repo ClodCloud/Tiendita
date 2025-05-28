@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" prefHeight="1015.0" prefWidth="1800.0" stylesheets="@../css/Products.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.controllers.SalesDashboardController">
+   <children>
+      <VBox prefHeight="720.0" prefWidth="1280.0">
+         <children>
+            <HBox prefHeight="46.0" prefWidth="738.0" />
+            <HBox prefHeight="37.0" prefWidth="738.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="34.0" prefWidth="125.0" style="-fx-background-radius: 20; -fx-background-color: #ffff; -fx-border-color: #9966ff; -fx-border-radius: 20;" text="❌ Cerrar(esc)" textFill="#9966ff">
+                     <HBox.margin>
+                        <Insets left="55.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Bauhaus 93" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="searchBtn" mnemonicParsing="false" onAction="#searchAction" prefHeight="34.0" prefWidth="125.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-background-color: #ffff; -fx-border-color: #9999ff;" text="🔎 Buscar(F2)" textFill="#9999ff">
+                     <HBox.margin>
+                        <Insets left="35.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Bauhaus 93" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="34.0" prefWidth="125.0" style="-fx-background-radius: 20; -fx-background-color: #ffff; -fx-border-color: #9966ff; -fx-border-radius: 20;" text="✂ Editar(F3)" textFill="#9966ff">
+                     <HBox.margin>
+                        <Insets left="35.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <StackPane prefHeight="150.0" prefWidth="200.0">
+                     <children>
+                        <ImageView blendMode="RED" fitHeight="58.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@validando-ticket.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="62.0" prefWidth="109.0" text="Ticket 1" textFill="#7575ff">
+                           <font>
+                              <Font name="Bauhaus 93" size="30.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="35.0" />
+                     </HBox.margin>
+                  </StackPane>
+                  <Button mnemonicParsing="false" prefHeight="34.0" prefWidth="125.0" style="-fx-background-color: #ffff; -fx-background-radius: 20; -fx-border-color: #9999ff; -fx-border-radius: 20;" text="🗑 Borrar(supr)" textFill="#9999ff">
+                     <HBox.margin>
+                        <Insets left="35.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="34.0" prefWidth="125.0" style="-fx-background-color: #ffff; -fx-background-radius: 20; -fx-border-color: #9966ff; -fx-border-radius: 20;" text="💵 Entrada(F8)" textFill="#9966ff">
+                     <HBox.margin>
+                        <Insets left="35.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="34.0" prefWidth="125.0" style="-fx-background-radius: 20; -fx-background-color: #ffff; -fx-border-color: #9999ff; -fx-border-radius: 20;" text="💸 Salidas(F9)" textFill="#9999ff">
+                     <HBox.margin>
+                        <Insets left="35.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="42.0" prefWidth="738.0">
+               <children>
+                  <ImageView fitHeight="41.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@codigo-de-barras.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="100.0" right="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <TextField prefHeight="27.0" prefWidth="574.0" style="-fx-background-radius: 20; -fx-border-color: #9966ff; -fx-border-radius: 20;">
+                     <HBox.margin>
+                        <Insets left="50.0" top="8.0" />
+                     </HBox.margin>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </TextField>
+                  <Button mnemonicParsing="false" prefHeight="33.0" prefWidth="148.0" style="-fx-background-radius: 20; -fx-background-color: #ffff; -fx-border-color: #9966ff; -fx-border-radius: 20;" text="(INS) Varios" textFill="#9966ff">
+                     <font>
+                        <Font name="Bauhaus 93" size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="50.0" top="1.0" />
+                     </HBox.margin>
+                  </Button>
+                  <VBox prefHeight="42.0" prefWidth="305.0">
+                     <children>
+                        <Label prefHeight="22.0" prefWidth="121.0" text="Tendero Asignado:">
+                           <font>
+                              <Font name="Bauhaus 93" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="30.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="19.0" prefWidth="306.0" text="Juan Paco Pedro de la Mar">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <AnchorPane prefHeight="549.0" prefWidth="1280.0">
+               <children>
+                  <TableView fx:id="salesTable" prefHeight="535.0" prefWidth="1280.0">
+                    <columns>
+                        <TableColumn fx:id="cantidadCol" prefWidth="120.00006103515625" text="Cant." />
+                      <TableColumn fx:id="codBarCol" prefWidth="257.3333435058594" text="Codigo Barras" />
+                      <TableColumn fx:id="descripCol" prefWidth="292.6666564941406" sortType="DESCENDING" text="Descripción del Producto" />
+                        <TableColumn fx:id="existenciasCol" prefWidth="129.6666259765625" sortType="DESCENDING" text="Existencias" />
+                        <TableColumn fx:id="precioCol" prefWidth="147.0" text="Precio U." />
+                        <TableColumn fx:id="subtotalCol" minWidth="0.0" prefWidth="332.3333740234375" text="Subtotal" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+            <HBox prefHeight="77.0" prefWidth="738.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="46.0" prefWidth="210.0" style="-fx-background-color: #ffff; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #9966ff;" text="Marcar ticket &quot;pendiente&quot;" textFill="#9966ff">
+                     <HBox.margin>
+                        <Insets left="10.0" top="15.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Bauhaus 93" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="63.0" prefWidth="123.0" style="-fx-background-color: #ffff; -fx-border-color: #9966ff; -fx-border-radius: 30; -fx-background-radius: 30;" text="Cobrar" textFill="#9966ff">
+                     <font>
+                        <Font name="Bauhaus 93" size="26.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="700.0" top="7.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Label fx:id="totalLabel" alignment="CENTER" prefHeight="70.0" prefWidth="226.0" text="Label">
+                     <HBox.margin>
+                        <Insets left="7.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="47.0" />
+                     </font>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
